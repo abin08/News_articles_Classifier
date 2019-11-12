@@ -70,22 +70,22 @@ def get_tokens(text):
     tokens = [token.strip() for token in tokens]
     return tokens
 
-def clean_text(text, html_tag_removal=False, accented_chars_removal=False, 
-    special_chars_removal=False, stemming=False, 
-    lemmatization=False, stopwords_removal=False, remove_digits=False):
-    """
-    Performs text preprocessing methods on the text based on true arguments
-    """
-    if html_tag_removal:
-        text = remove_html_tags(text)
-    if accented_chars_removal:
-        text = remove_accented_chars(text)
-    if special_chars_removal:
-        text = remove_special_chars(text, remove_digits=remove_digits)
-    if stemming:
-        text = get_stem(text)
-    if lemmatization:
-        text = lemmatize_text(text)
-    if stopwords_removal:
-        text = remove_stopwords(text)
-    return text
+# def clean_text(doc, html_tag_removal=True, accented_chars_removal=True, 
+#     special_chars_removal=True, stemming=True, 
+#     lemmatization=True, stopwords_removal=True, remove_digits=True):
+#     """
+#     Performs text preprocessing methods on the text based on true arguments
+#     """
+#     if html_tag_removal:
+#         doc = remove_html_tags(doc)
+#     if accented_chars_removal:
+#         doc = remove_accented_chars(doc)
+#     if special_chars_removal:
+#         doc = remove_special_chars(doc, remove_digits=remove_digits)
+#     # if stemming:
+#         # doc = get_stem(doc)
+#     if lemmatization:
+#         doc = lemmatize_text(doc)
+#     if stopwords_removal:
+#         doc = remove_stopwords(doc)
+#     return doc
