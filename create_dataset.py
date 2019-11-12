@@ -24,3 +24,7 @@ def main():
     
 if __name__ == "__main__":
     main()
+
+#  https://towardsdatascience.com/a-practitioners-guide-to-natural-language-processing-part-i-processing-understanding-text-9f4abfd13e72
+#  https://github.com/miguelfzafra/Latest-News-Classifier/blob/master/0.%20Latest%20News%20Classifier/03.%20Feature%20Engineering/03.%20Feature%20Engineering.ipynb
+#  https://towardsdatascience.com/text-classification-in-python-dd95d264c802
