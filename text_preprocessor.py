@@ -69,3 +69,23 @@ def get_tokens(text):
     tokens = tokenizer.tokenize(text)
     tokens = [token.strip() for token in tokens]
     return tokens
+
+def clean_text(text, html_tag_removal=False, accented_chars_removal=False, 
+    special_chars_removal=False, stemming=False, 
+    lemmatization=False, stopwords_removal=False, remove_digits=False):
+    """
+    Performs text preprocessing methods on the text based on true arguments
+    """
+    if html_tag_removal:
+        text = remove_html_tags(text)
+    if accented_chars_removal:
+        text = remove_accented_chars(text)
+    if special_chars_removal:
+        text = remove_special_chars(text, remove_digits=remove_digits)
+    if stemming:
+        text = get_stem(text)
+    if lemmatization:
+        text = lemmatize_text(text)
+    if stopwords_removal:
+        text = remove_stopwords(text)
+    return text
