@@ -26,3 +26,4 @@ def predict_category(text):
     text = tp.clean_text(text)
     cat = mnb_model.predict(tfidf.transform([text]))
     return category_name(cat[0])
+
