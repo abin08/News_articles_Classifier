@@ -4,3 +4,6 @@ Project classifies news articles into different categories based on its contents
 
 Used BBC news data set in the link given below to create models
 http://mlg.ucd.ie/datasets/bbc.html
+
+
+![](news_sentiment.png)
